@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seoyeon's Portfolio</title>
+    <meta name="description" content="Portfolio for world-reknowned software engineer Seoyeon">
+    <meta name="author" content="Seoyeon">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="https://kit.fontawesome.com/e8b6b8d61d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <!-- defer를 쓰는 것은 html 파일이 pursuing되는 동안 자바스크립트 파일을 동시에 다운로드 받아서 완료된 후에
+    자바스크립트 파일을 실행하기 때문 -->
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <img class="icon" src="images/favicon.png" alt="logo">
+            <a href="#">Seoyeon</a>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item active" data-link="#home">Home</li>
+            <li class="navbar__menu__item" data-link="#about">About</li>
+            <li class="navbar__menu__item" data-link="#skills">Skills</li>
+            <li class="navbar__menu__item" data-link="#work">My work</li>
+            <li class="navbar__menu__item" data-link="#testimonials">Know more</li>
+            <li class="navbar__menu__item" data-link="#contact">Contact</li>
+        </ul>
+
+        <!-- Toggle button -->
+        <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+    
+    <!-- Home -->
+    <section id="home">
+        <div class="home__container">
+            <img
+            src="images/me.jpg" 
+            alt="Seoyeon's profile photo" 
+            class="home__avatar"
+            >
+            <h1 class="home__title">Hello,<br> I'm Seoyeon Han.</h1>
+            <h2 class="home__description">퍼블리싱이 가능한 UI/UX 디자이너 한서연입니다.</h2>
+            <button class="home__contact">Contact me</button>
+        </div>
+    </section>
+
+    <!-- About me -->
+    <section id="about" class="section section__container">
+        <h1>About me</h1>
+        <p>다수의 고정형과 반응형 홈페이지 제작과 디자인 경험이 있으며, 멋진 반응형 웹사이트에 열정이 넘치는 신입 UI/UX 디자이너입니다.
+            새로운 기술 습득에 관심이 많으며 끊임없는 사고를 통한 문제 해결을 즐기는 디자이너입니다. 2019년에 웹디자인을 배우기 위해
+            약 800시간 동안의 교육을 받았으며 그 이후에 디자인뿐만 아니라 프론트엔드도 독학하며 여러 프로젝트를 진행하였습니다. 
+        </p>
+        <div class="about__majors">
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="major__title">HTML</div>
+                <div class="major__description">
+                    <!-- HTML, CSS, JavaScript, TypeScript<br>React, Vue, Web APIs -->
+                </div>
+            </div>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="major__title">CSS</div>
+                <div class="major__description">
+                    <!-- Android, iOS, React Native, Flutter,<br>Java, Swift, Kotlin -->
+                </div>
+            </div>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-js-square"></i>
+                </div>
+                <div class="major__title">Javascript</div>
+                <div class="major__description">
+                    <!-- JAVA, JavaScript, Go, NodeJS,<br>Rest APIs, GraphGL -->
+                </div>
+            </div>
+        </div>
+        <div class="about__educations">
+            <div class="education">
+                <!-- <img
+                    src="images/jobs/samsungLogo.png"
+                    alt="samsung"
+                    class="job__logo"> -->
+                <div class="education__title">Education</div>
+                <div class="education__description">
+                    <p class="education__name">
+                        Dankook University
+                    </p>
+                    <p class="education__period">
+                        2015.03.02 - 2020.02.26
+                    </p>
+                    <p class="education__period">
+                        주전공 : 생명자원대학 환경원예학과 (졸업) <br> 부전공 : 경영대학 경영학과
+                    </p>
+                </div>
+            </div>
+            <div class="education">
+                <div class="education__title">+ More</div>
+                <div class="education__description">
+                    <p class="education__name">
+                        모바일 UI/UX 웹디자인 
+                    </p>
+                    <p class="education__period">
+                        2019.10.18 - 2020.03.19
+                    </p>
+                    <p class="education__period">
+                        <span><이젠 IT 아카데미 컴퓨터 학원></span><br>
+                        - 프로그래밍(Java) 및 SW기초 기술 습득<br>
+                        - 다양한 툴을 이용한 웹페이지 제작, 모바일웹 구현<br>
+                        - 프로토타입 제작, UI/UX 분석 및 전략 수립<br>
+                        - 디지털 디자인 프로젝트 분석 및 설계
+                    </p>
+                </div>
+                <div class="education__description">
+                    <p class="education__name">
+                        웹디자인기능사 자격증
+                    </p>
+                    <p class="education__period">
+                        2020.04.29  취득 / 한국산업인력공단
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <div class="section__container">
+            <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>
+            새로운 상황에서도 신속하게 적응할 수 있는 능력과 새로운 기술을 배우려는 열정을 가지고 있으며, 팀과의 협업에서 성공적인 결과물을 낼 수 있습니다. 또한
+            항상 시간 엄수의 중요성과 책임감을 인지하고 있어 철저한 계획을 통해 시간 내에 완성도 높은 결과를 내기 위해 노력합니다.
+        </p>
+        <div class="skillset">
+            <div class="skillset__left">
+                <h3 class="skillset__title">Skills</h3>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>HTML</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>CSS</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>JavaScript</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>XD</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>Photoshop</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skillset__right">
+                <!-- <div class="tools">
+                    <h3 class="skillset__title">Tools</h3>
+                    <ul class="tools__list">
+                        <li><span>Visual Studio Code</span></li>
+                        <li><span>IntelliJ</span></li>
+                        <li><span>Android Studio Code </span></li>
+                        <li><span>iOS development tools</span></li>
+                    </ul>
+                </div> -->
+                <div class="etc">
+                    <h3 class="skillset__title">Others</h3>
+                    <ul class="etc__list">
+                        <li><span>Illustrator</span></li>
+                        <li><span>Github</span></li>
+                        <li><span>Visual Studio Code</span></li>
+                        <li><span>SCSS</span></li>
+                        <li><span></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="section">
+        <div class="section__container">
+            <h1>My work</h1>
+            <h3>Projects</h3>
+            <div class="work__categories">
+                <button class="category__btn selected" data-filter="*"> 
+                    All<span class="category__count">8</span>
+                </button>
+                <button class="category__btn" data-filter="responsive">
+                    Responsive<span class="category__count">4</span>
+                </button>
+                <button class="category__btn" data-filter="web-basic">
+                    Web Basic / Mobile<span class="category__count">2</span>
+                </button>
+                <button class="category__btn" data-filter="javascript">
+                    JavaScript<span class="category__count">2</span>
+                </button>
+            </div>
+            <div class="work__projects">
+                <!-- 1 -->
+                <a
+                    href="http://jomalone.dothome.co.kr/" 
+                    class="project"
+                    target="blank"
+                    data-type="responsive"
+                >
+                    <img 
+                        src="images/projects/jomalone-mockup.png" 
+                        alt="project image"
+                        class="project__img"
+                    >
+                    <div class="project__description">
+                        <h3>Jo Malone</h3>
+                        <span>Responsive website /<br>Redesigning with HTML, CSS, JS</span>
+                    </div>
+                </a>
+                <!-- 2 -->
+                <a
+                    href="http://haagen.dothome.co.kr/" 
+                    class="project"
+                    target="blank"
+                    data-type="web-basic"
+                >
+                    <img 
+                        src="images/projects/haagen-mockup.png" 
+                        alt="project image"
+                        class="project__img"
+                    >
+                    <div class="project__description">
+                        <h3>Haagen-Dazs</h3>
+                        <span>Desktop only /<br>Redesigning with HTML, CSS, JS</span>
+                    </div>
+                </a>
+                <!-- 3 -->
+                <a
+                    href="https://thedeveloper23.github.io/Easybank/" 
+                    class="project"
+                    target="blank"
+                    data-type="responsive"
+                >
+                    <img 
+                        src="images/projects/easybank-mockup.png" 
+                        alt="project image"
+                        class="project__img"
+                    >
+                    <div class="project__description">
+                        <h3>Easy Bank</h3>
+                        <span>Responsive website /<br>Clone Coding with HTML, SCSS, JS</span>
+                    </div>
+                </a>
+                <!-- 4 -->
+                <a
+                    href="https://thedeveloper23.github.io/RestaurantTasty/." 
+                    class="project"
+                    target="blank"
+                    data-type="responsive"
+                >
+                    <img 
+                        src="images/projects/tasty-mockup-small.png" 
+                        alt="project image"
+                        class="project__img"
+                    >
+                    <div class="project__description">
+                        <h3>Restaurant Tasty</h3>
+                        <span>Responsive website / <br>Clone Coding with HTML, CSS, JS</span>
+                    </div>
+                </a>
+                <!-- 5 -->
+                <a
+                    href="https://marvelapp.com/prototype/4jgabg2/screen/64425265" 
+                    class="project"
+                    target="blank"
+                    data-type="web-basic"
+                >
+                    <img 
+                        src="images/projects/mybaby-mockup.jpg" 
+                        alt="project image"
+                        class="project__img"
+                    >
+                    <div class="project__description">
+                        <h3>금쪽같은 내새끼</h3>
+                        <span>Mobile application<br>(Group project) /<br>Designing & Prototyping</span>
+                    </div>
+                </a>
+                <!-- 6 -->
+                <a
+                    href="https://thedeveloper23.github.io/CarrotMinigame/." 
+                    class="project"
+                    target="blank"
+                    data-type="javascript"
+                >
+                    <img 
+                        src="images/projects/carrotgame-mockup.png" 
+                        alt="project image"
+                        class="project__img"
+                    >
+                    <div class="project__description">
+                        <h3>Carrot Minigame</h3>
+                        <span>Minigame /<br>Coding with HTML, CSS, JS</span>
+                    </div>
+                </a>
+                <!-- 7 -->
+                <a
+                    href="https://thedeveloper23.github.io/MemoTool/." 
+                    class="project"
+                    target="blank"
+                    data-type="javascript"
+                >
+                    <img 
+                        src="images/projects/memopad-mockup.png" 
+                        alt="project image"
+                        class="project__img"
+                    >
+                    <div class="project__description">
+                        <h3>Memo Pad</h3>
+                        <span>Memo tool /<br>Coding with HTML, CSS, JS</span>
+                    </div>
+                </a>
+                <!-- 8 -->
+                <a
+                    href="https://thedeveloper23.github.io/GTQ_2019/" 
+                    class="project"
+                    target="blank"
+                    data-type="responsive"
+                >
+                    <img 
+                        src="images/projects/gtq-mockup.png" 
+                        alt="project image"
+                        class="project__img"
+                    >
+                    <div class="project__description">
+                        <h3>GTQ Website</h3>
+                        <span>Responsive website /<br>Clone Coding with HTML and CSS</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+        <div class="section__container">
+            <h1>Know more about me</h1>
+            <!-- <h3>See what they say about me</h3> -->
+            <div class="testimonials">
+                <!-- 1 -->
+                <div class="testimonial">
+                    <div class="testimonial__avatar">🧍‍♀️</div>
+                    <div class="testimonial__speech-bubble">
+                        <p>책임감을 갖고 최선을 다해 주어진 업무를 수행하여 빠른 시간 내에 많은 실무 경험과 실력을 쌓기 위해 부족하거나 모르는 부분이 있다면 바로 습득하고 한 층 더 성장한 인재가 되도록 노력하겠습니다.
+                        </p>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="testimonial">
+                    <div class="testimonial__speech-bubble">
+                        <div class="testimonial__more">
+                            <h3>[Growth]</h3>
+                            <p>- 사용자 편의에 맞춘 UX <br> - 직관적인 디자인</p>
+                        </div>
+                        <div class="testimonial__more">
+                            <h3>[Study]</h3>
+                            <p>- 실무 경험<br>- InDesign <br> - Sketch <br> - React</p>
+                        </div>
+                        <div class="testimonial__more">
+                            <h3>[Interest]</h3>
+                            <p>- 환경보호 <br> - 제로웨이스트 <br> - 외국어</p>
+                        </div>
+                        <!-- <p>Lorem Ipsum is simply dummy text of the printing 
+                        and typesetting industry. Lorem Ipsum has been 
+                        the industry's standard dummy text ever since the 
+                        1500s, when an unknown printer took a galley of 
+                        type and scrambled it to make a type specimen book.
+                        It has survived not only five centuries, but also 
+                        the leap into electronic typesetting, remaining 
+                        essentially unchanged. -->
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <h1 class="contact__title">Let's have a talk</h1>
+        <h2 class="contact__email">seoyon0523@naver.com</h2>
+        <div class="contact__links">
+            <a href="https://github.com/thecoder523/Portfolio" target="blank">
+                <i class="fab fa-github-square"></i>
+            </a>
+            <a href="#" target="blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <p class="contact__rights">
+            2021 Dream Coding Seoyeon - All rights reserved
+        </p>
+    </section>
+
+    <!-- Arrow up -->
+    <!-- <button onclick="topFunction()" id="myBtn" 
+        title="Go to top">Top</button> -->
+    <button class="arrow-up">
+        <i class="fas fa-long-arrow-alt-up"></i>
+    </button>
+  </body>
+</html>
